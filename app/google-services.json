@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "745184970807",
+    "firebase_url": "https://smart-class-54f64.firebaseio.com",
+    "project_id": "smart-class-54f64",
+    "storage_bucket": "smart-class-54f64.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:745184970807:android:3c83ac09627661d1",
+        "android_client_info": {
+          "package_name": "vn.viethoang.truong.smartclass"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "745184970807-o4vqhv947gfais1flc257ik9q3gmhb5g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACKABut7Dg71m40B7OWy6L-RDvOwOO3YU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "745184970807-o4vqhv947gfais1flc257ik9q3gmhb5g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

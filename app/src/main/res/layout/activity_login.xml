@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg_login"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    tools:context=".View.Login.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:hint="Tài khoản"
+        android:textColorHint="@color/textColor"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edAcc"
+            android:layout_width="match_parent"
+            android:textColor="@color/textColor"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:textColorHint="@color/textColor"
+        android:hint="Mật khẩu"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edPass"
+            android:layout_width="match_parent"
+            android:inputType="textPassword"
+            android:textColor="@color/textColor"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+        <TextView
+            android:id="@+id/txtFail"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorOff"
+            android:text="Sai tài khoản hoặc mật khẩu !"/>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_marginTop="20dp"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:text="Đăng nhập"
+            android:textColor="@color/textColor"
+            android:textSize="18dp"
+            android:textAllCaps="false"
+            android:background="@color/colorAccent"/>
+
+    </LinearLayout>
+
+</FrameLayout>

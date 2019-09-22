@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_no_selected"
+        android:layout_height="?attr/actionBarSize">
+
+        <Button
+            android:id="@+id/btnExit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_selected"
+            android:gravity="center"
+            android:text="THOÁT"
+            android:textColor="@color/color_text_blue"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_selected"
+            android:gravity="center"
+            android:text="LƯU"
+            android:textColor="@color/color_text_blue"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+         <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/color_line"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtTittle"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:background="@color/color_line"
+        android:gravity="center"
+        android:textColor="@color/PrimaryTextColor"
+        android:textSize="18dp"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@color/textColor"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="1dp" />
+
+    <LinearLayout
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:orientation="horizontal"
+        android:background="@color/color_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txtNowtus"
+                android:text="Hôm nay - "
+                android:textSize="13dp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/txtDOW"
+                android:text="Thứ 3, "
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/txtDOM"
+                android:text="19/"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/txtMonth"
+                android:text="03/"
+                android:textStyle="bold"
+                android:layout_marginLeft="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/txtYear"
+                android:text="2019"
+                android:textStyle="bold"
+                android:layout_marginLeft="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnCalendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_calendar_sel"
+            android:drawableLeft="@drawable/ic_event_black_24dp"
+            android:text="Ngày"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/color_text_blue" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@color/textColor"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="1dp" />
+
+    <LinearLayout
+        android:background="@color/color_line"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <NumberPicker
+            android:id="@+id/pickerHour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="@color/PrimaryTextColor"
+            android:text=" : "/>
+        <NumberPicker
+            android:id="@+id/pickerMinute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@color/textColor"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="1dp" />
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="20dp"
+                 android:text="Lặp lại"
+                 android:textSize="21dp"
+            />
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:orientation="horizontal"
+                 android:gravity="center"
+                 android:padding="20dp"
+                 android:layout_height="wrap_content">
+                 <TextView
+                     android:id="@+id/txtMon"
+                     android:layout_marginRight="15dp"
+                     android:layout_width="wrap_content"
+                     android:text="2"
+                     android:background="@drawable/bg_day_no_select"
+                     android:textSize="21dp"
+                     android:onClick="textOnClick"
+                     android:gravity="center"
+                     android:layout_height="wrap_content" />
+
+                 <TextView
+                     android:id="@+id/txtTue"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginRight="15dp"
+                     android:background="@drawable/bg_day_no_select"
+                     android:gravity="center"
+                     android:onClick="textOnClick"
+                     android:text="3"
+                     android:textSize="21dp" />
+                 <TextView
+                     android:id="@+id/txtWed"
+                     android:layout_marginRight="15dp"
+                     android:layout_width="wrap_content"
+                     android:text="4"
+                     android:onClick="textOnClick"
+                     android:background="@drawable/bg_day_no_select"
+                     android:textSize="21dp"
+                     android:gravity="center"
+                     android:layout_height="wrap_content" />
+                 <TextView
+                     android:id="@+id/txtThurs"
+                     android:layout_marginRight="15dp"
+                     android:layout_width="wrap_content"
+                     android:text="5"
+                     android:onClick="textOnClick"
+                     android:background="@drawable/bg_day_no_select"
+                     android:textSize="21dp"
+                     android:gravity="center"
+                     android:layout_height="wrap_content" />
+                 <TextView
+                     android:id="@+id/txtFri"
+                     android:layout_marginRight="15dp"
+                     android:layout_width="wrap_content"
+                     android:text="6"
+                     android:onClick="textOnClick"
+                     android:background="@drawable/bg_day_no_select"
+                     android:textSize="21dp"
+                     android:gravity="center"
+                     android:layout_height="wrap_content" />
+                 <TextView
+                     android:id="@+id/txtSat"
+                     android:layout_marginRight="15dp"
+                     android:layout_width="wrap_content"
+                     android:text="7"
+                     android:onClick="textOnClick"
+                     android:background="@drawable/bg_day_no_select"
+                     android:textSize="21dp"
+                     android:gravity="center"
+                     android:layout_height="wrap_content" />
+                 <TextView
+                     android:id="@+id/txtSunday"
+                     android:layout_width="wrap_content"
+                     android:text="C"
+                     android:onClick="textOnClick"
+                     android:textColor="@color/colorOff"
+                     android:background="@drawable/bg_day_no_select"
+                     android:textSize="21dp"
+                     android:gravity="center"
+                     android:layout_height="wrap_content" />
+
+             </LinearLayout>
+
+</LinearLayout>
+
+    </FrameLayout>
+
+
+
+</LinearLayout>

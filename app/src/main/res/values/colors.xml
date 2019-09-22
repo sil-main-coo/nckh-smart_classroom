@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#212121</color>
+    <color name="colorPrimaryDark">#212121</color>
+    <color name="lightPrimaryColor">#B2EBF2</color>
+    <color name="textColor">#e0e0e0</color>
+    <color name="PrimaryTextColor">#212121</color>
+    <color name="secondaryTextColor">#757575</color>
+    <color name="colorAccent">#8bc34a</color>
+    <color name="colorOn">#00FF00</color>
+    <color name="colorOff">#FF0000</color>
+    <color name="tabcolor">#292A2A</color>
+    <color name="color_line">#FFFF</color>
+    <color name="color_text_blue">#2196F3</color>
+    <color name="colorbgRowSensor">#BA3A47</color>
+</resources>

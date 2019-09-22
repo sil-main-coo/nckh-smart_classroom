@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".View.Home.Fragment.ControlFirstClassFragment">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:background="@color/colorbgRowSensor"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textColor="@color/color_line"
+            android:text="Công tắc"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/btnLight"
+                    android:layout_width="128px"
+                    android:src="@drawable/off"
+                    android:layout_height="128px"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Đèn"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/textColor"
+                    android:textSize="16dp"
+                    android:typeface="monospace"
+                    app:fontFamily="serif" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lnAlarm"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="64px"
+                    android:layout_height="64px"
+                    android:background="@color/colorbgRowSensor"
+                    android:src="@drawable/alarm" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hẹn giờ"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/textColor"
+                    android:textSize="13dp"
+                    android:typeface="monospace"
+                    app:fontFamily="serif" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/btnFan"
+                    android:layout_width="128px"
+                    android:src="@drawable/off"
+                    android:layout_height="128px"
+                    android:layout_gravity="center"
+                  />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Quạt"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/textColor"
+                    android:textSize="16dp"
+                    android:typeface="monospace"
+                    app:fontFamily="serif" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/color_line"
+            android:text="Chức năng"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:paddingBottom="1dp"
+            android:paddingRight="1dp"
+            android:paddingLeft="1dp"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:background="@color/color_line"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_marginTop="1dp"
+                android:layout_width="103dp"
+                android:orientation="vertical"
+                android:layout_marginRight="1dp"
+                android:background="@color/colorbgRowSensor"
+                android:layout_height="103dp">
+
+                <ImageView
+                    android:layout_width="64px"
+                    android:layout_height="64px"
+                    android:layout_gravity="center"
+                    android:src="@drawable/human"
+                    />
+
+                <TextView
+                    android:id="@+id/txtSoNguoi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:textColor="#7cb342"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"
+                    android:text="0"
+                    android:textSize="25dp" />
+                <TextView
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Số người"
+                    android:textColor="@color/textColor"
+                    android:textSize="13dp"
+                    android:layout_marginTop="5dp"
+                    android:typeface="monospace"
+                    app:fontFamily="serif" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:background="@color/colorbgRowSensor"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:padding="15dp"
+        android:layout_height="match_parent">
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabSendmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_margin="16dp"
+            android:clickable="true"
+            android:src="@drawable/mail" />
+
+        <TableRow android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:id="@+id/txtContentVoice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/textColor"
+                android:textSize="20dp"
+                app:fontFamily="@font/text_me_one" />
+
+        </TableRow>
+
+    </FrameLayout>
+
+
+</LinearLayout>

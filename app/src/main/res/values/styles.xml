@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="style_menu_item" parent="AppTheme">
+        <item name="drawerArrowStyle"> @style/style_drawer_toggle</item>
+    </style>
+
+    <style name="style_drawer_toggle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@color/textColor</item>
+    </style>
+
+    <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <!-- Customize color of navigation drawer icon and back arrow -->
+        <item name="colorControlNormal">@color/textColor</item>
+    </style>
+</resources>
